@@ -37,6 +37,13 @@
 			);
 			target = AA4B04D82D3B035800EEE206 /* CodeBuddy */;
 		};
+		AA4B05102D3B067A00EEE206 /* Exceptions for "CodeBuddy" folder in "CodeBuddyUITests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				ScanView.swift,
+			);
+			target = AA4B04F62D3B035A00EEE206 /* CodeBuddyUITests */;
+		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -44,6 +51,7 @@
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
 				AA4B04FF2D3B035A00EEE206 /* Exceptions for "CodeBuddy" folder in "CodeBuddy" target */,
+				AA4B05102D3B067A00EEE206 /* Exceptions for "CodeBuddy" folder in "CodeBuddyUITests" target */,
 			);
 			path = CodeBuddy;
 			sourceTree = "<group>";
@@ -208,6 +216,8 @@
 			);
 			mainGroup = AA4B04D02D3B035800EEE206;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = AA4B04DA2D3B035800EEE206 /* Products */;
 			projectDirPath = "";

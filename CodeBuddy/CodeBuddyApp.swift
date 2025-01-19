@@ -7,6 +7,7 @@
 
 import SwiftUI
 import SwiftData
+import FlexokiColors
 
 @main
 struct CodeBuddyApp: App {
