@@ -7,15 +7,37 @@
 
 import SwiftUI
 
+fileprivate struct ScanArea: View {
+    var body: some View {
+        RoundedRectangle(cornerSize: CGSize(width: 12, height: 12), style: .continuous)
+            .fill(Color.primaryText)
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
+    }
+}
+
+fileprivate struct ScanButton: View {
+    var body: some View {
+        Text("scan")
+            .foregroundStyle(.primaryText)
+            .fontDesign(.monospaced)
+            .padding(12)
+    }
+}
+
 struct ScanView: View {
     var body: some View {
         ZStack {
-            Color(.systemBackground)
+            Color(.background)
+                .ignoresSafeArea()
 
-            Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-                .foregroundStyle(.accentMagenta)
+            VStack {
+                ScanArea()
+                    .padding(.horizontal, 12)
+                    .padding(.vertical, 24)
+
+                ScanButton()
+            }
         }
-        .ignoresSafeArea()
     }
 }
 
