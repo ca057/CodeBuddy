@@ -27,6 +27,7 @@ struct CodeBuddyApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .tint(.primaryText)
         }
         .modelContainer(sharedModelContainer)
     }

@@ -15,12 +15,23 @@ fileprivate struct ScanArea: View {
     }
 }
 
-fileprivate struct ScanButton: View {
+fileprivate struct ScanTriggerButtons: View {
     var body: some View {
-        Text("scan")
-            .foregroundStyle(.primaryText)
-            .fontDesign(.monospaced)
-            .padding(12)
+        HStack {
+            Spacer()
+
+            Button("upload", action: { print("upload") })
+                .buttonStyle(.bordered)
+                .fontDesign(.monospaced)
+
+            Spacer()
+
+            Button("scan", action: { print("scan") })
+                .buttonStyle(.borderedProminent)
+                .fontDesign(.monospaced)
+
+            Spacer()
+        }
     }
 }
 
@@ -32,10 +43,10 @@ struct ScanView: View {
 
             VStack {
                 ScanArea()
-                    .padding(.horizontal, 12)
-                    .padding(.vertical, 24)
+                    .padding(12)
 
-                ScanButton()
+                ScanTriggerButtons()
+                    .padding(12)
             }
         }
     }
@@ -43,4 +54,5 @@ struct ScanView: View {
 
 #Preview {
     ScanView()
+        .tint(.primaryText)
 }
