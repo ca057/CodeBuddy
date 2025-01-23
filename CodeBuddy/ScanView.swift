@@ -9,7 +9,7 @@ import SwiftUI
 
 fileprivate struct ScanArea: View {
     var body: some View {
-        RoundedRectangle(cornerSize: CGSize(width: 12, height: 12), style: .continuous)
+        UnevenRoundedRectangle(topLeadingRadius: 12, bottomLeadingRadius: 4, bottomTrailingRadius: 4, topTrailingRadius: 12, style: .continuous)
             .fill(Color.primaryText)
             .frame(maxWidth: .infinity, maxHeight: .infinity)
     }
