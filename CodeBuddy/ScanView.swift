@@ -12,6 +12,8 @@ fileprivate struct ScanArea: View {
         UnevenRoundedRectangle(topLeadingRadius: 12, bottomLeadingRadius: 4, bottomTrailingRadius: 4, topTrailingRadius: 12, style: .continuous)
             .fill(Color.primaryText)
             .frame(maxWidth: .infinity, maxHeight: .infinity)
+        
+        // TODO: add scan / progress bar
     }
 }
 
